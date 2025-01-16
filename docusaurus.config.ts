@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'OWWL Library System Technical Documentation',
+  tagline: '',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -17,11 +17,24 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'OWWL-Library-System', // Usually your GitHub org/user name.
+  projectName: 'eg-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+  plugins: [
+    [
+      "@orama/plugin-docusaurus-v3",
+      {
+        cloud: {
+          indexId: process.env.ORAMA_CLOUD_INDEX_ID,
+          oramaCloudAPIKey: process.env.ORAMA_CLOUD_API_KEY, // Env variable suggested
+          deploy: "default", // Enables deploy while building/starting
+        },
+      },
+    ],
+  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -40,9 +53,11 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/OWWL-Library-System/eg-docs/tree/main/',
         },
         blog: {
+          path: 'changelog',
+          routeBasePath: 'changelog',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -51,7 +66,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/OWWL-Library-System/eg-docs/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -68,7 +83,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'OWWL Technical Documentation',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -76,14 +91,14 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'egdocsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Evergreen Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/changelog', label: 'Changelog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://owwl.org',
+          label: 'owwl.org',
           position: 'right',
         },
       ],
@@ -95,25 +110,17 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Evergreen Docs',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Other OWWL sites',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'search.owwl.org',
+              href: 'https://search.owwl.org',
             },
           ],
         },
@@ -121,17 +128,13 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Changelog',
+              to: '/changelog',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.`,
     },
     prism: {
       theme: prismThemes.github,

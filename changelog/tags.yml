@@ -1,0 +1,14 @@
+owwl-policy:
+  label: OWWL-Policy
+  permalink: /owwl-policy
+  description: OWWL Policy
+
+evergreen:
+  label: evergreen
+  permalink: /evergreen
+  description: Evergreen
+
+aspen:
+  label: aspen
+  permalink: /aspen
+  description: Aspen

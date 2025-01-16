@@ -1,8 +1,7 @@
 ---
-slug: first-blog-post
 title: First Blog Post
-authors: [slorber, yangshun]
-tags: [hola, docusaurus]
+authors: [danguarracino, kriedener, khibbardbaker]
+tags: [evergreen]
 ---
 
 Lorem ipsum dolor sit amet...
