@@ -82,7 +82,7 @@ If a damaged item is not owned by your library, use a Recall Hold to send the it
 
 ### Overdue until lost
 
-All items that are overdue more than 8 weeks will be marked as lost automatically by the Evergreen system. This will create a Lost Materials bill on the patron's account, which will typically block the patron from further circulation. (OWWLAC 04/2014)
+All items that are overdue more than four weeks will be marked as lost automatically by the Evergreen system. This will create a Lost Materials bill on the patron's account, which will typically block the patron from further circulation. (OWWLAC 04/2014)
 ### Items damaged beyond repair
 
 If an item is damaged to an extent that it cannot be repaired and remains checked out to the responsible patron, the item should be marked damaged and the patron billed for the full replacement price. (OWWLAC 04/2014)
