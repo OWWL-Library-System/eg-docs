@@ -24,7 +24,7 @@ Bills for lost and damaged materials may be paid at any library but the payment 
 
 ### Lost Materials Processing Fee bills
 
-If a library charges processing fees in addition to lost materials bills, then the library should roll the fee into the item price or use the system-generated Lost Materials Processing Fee bill. No libraries should create manual bills, after the fact. Contact PLS to configure the system-generated processing fee bill. (01/2014)
+If a library charges processing fees in addition to lost materials bills, then the library should roll the fee into the item price or use the system-generated Lost Materials Processing Fee bill. No libraries should create manual bills, after the fact. Contact OWWL to configure the system-generated processing fee bill. (01/2014)
 
 ### Overdue fines
 

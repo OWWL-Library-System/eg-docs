@@ -14,7 +14,7 @@ In-system patrons are all full and part-time residents (whether permanently or t
 
 ### Out-of-system Patron Statistical Categories
 
-The Residency and School Code statistical categories include areas that are out side of, but border the four PLS counties and/or share school districts with PLS communities. For these areas and school districts, select the appropriate codes. For all patrons who live in non-contiguous areas, use the "OOS" code from the Residency and School District lists. This information is necessary to determine the use of library resources by neighboring communities for taxing and free direct access purposes. (OWWLAC, 5/22/2012, 2/2014, 5/2018; EAC 12/2021; PLSDAC 01/2022)
+The Residency and School Code statistical categories include areas that are out side of, but border the four OWWL counties and/or share school districts with OWWL communities. For these areas and school districts, select the appropriate codes. For all patrons who live in non-contiguous areas, use the "OOS" code from the Residency and School District lists. This information is necessary to determine the use of library resources by neighboring communities for taxing and free direct access purposes. (OWWLAC, 5/22/2012, 2/2014, 5/2018; EAC 12/2021; PLSDAC 01/2022)
 
 ### Online Library Card Registration Policy
 
