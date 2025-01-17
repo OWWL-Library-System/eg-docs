@@ -15,7 +15,7 @@ Patrons are blocked from checking out new materials if they have 5 or more overd
 ## Holds
 ### Holds and accounts with circulation blocks
 
-If a patron's account has circulation blocks - fines of $5.00 or more or more than 5 overdue items - they may still place holds, and the holds will be captured and sent to the patron's pickup library as normal. However, the patron must resolve the circulation blocks before they will be able to check out their hold items. (OWWLAC 08/2018; EAC 04/2022; PLSDAC 05/2022)
+If a patron's account has circulation blocks they may still place holds, and the holds will be captured and sent to the patron's pickup library as normal. However, the patron must resolve the circulation blocks before they will be able to check out their hold items. (OWWLAC 08/2018; EAC 04/2022; PLSDAC 05/2022)
 
 ### Holds not picked up
 
@@ -27,7 +27,7 @@ Patrons may place up to 20 active holds. Patrons may place up to 30 additional s
 
 ### Age Based Hold Protection
 
-Age-based hold protection limits holds to those requests being picked up at the owning library, for a period of two months based on the copy create date. Use of age-based hold protection is optional, can be applied to all types of new materials, and can be removed from a copy at any time, as determined by the owning library. (OWWLAC 02/2013, 04/2014)
+Age-based hold protection limits holds to those requests being picked up at the owning library, for a period of up to two months based on the copy create date. Use of age-based hold protection is optional, can be applied to all types of new materials, and can be removed from a copy at any time, as determined by the owning library. (OWWLAC 02/2013, 04/2014)
 
 ## Loan periods
 ### Editing due dates when a patron needs extra time
@@ -69,7 +69,7 @@ To promote a consistent experience for patrons, items will circulate with due da
 
 ### Editing due dates when another library's item checks out with a "wrong" due date
 
-In some instances, misconfigured or conflicting settings will cause the item to be circulated with a loan period that is different than the checkout library's policy for the given type of material. In this case, the checkout library may edit the due date so that it follows their normal loan period. (OWWLAC 10/2013)
+In some instances, misconfigured or conflicting settings will cause the item to be circulated with a loan period that is different than the checkout library's policy for the given type of material. In this case, the checkout library may edit the due date so that it follows their normal loan period. Please contact OWWL to update your circulation policies so you do not continue to need to edit items' due dates. (OWWLAC 10/2013)
 
 ## Lost and damaged items
 ### Mark lost manually
@@ -80,13 +80,9 @@ Any library can mark an item lost, even items not owned by that library. Marking
 
 If a damaged item is not owned by your library, use a Recall Hold to send the item back to the owning library for evaluation and to be marked damaged as necessary. (OWWLAC 04/2014; EAC 04/2022; PLSDAC 05/2022)
 
-### Mark item lost by patron, item not owned by your library
-
-Any library may manually mark lost any other library's materials. When in doubt, contact the owning library before taking action. (OWWLAC 04/2014)
-
 ### Overdue until lost
 
-All items that are overdue more than 8 weeks will be marked as lost automatically by the Evergreen system. This will create a Lost Materials bill on the patron's account, which will typically block the patron from further circulation. (OWWLAC 04/2014)
+All items that are overdue more than four weeks will be marked as lost automatically by the Evergreen system. This will create a Lost Materials bill on the patron's account, which will typically block the patron from further circulation. (OWWLAC 04/2014)
 ### Items damaged beyond repair
 
 If an item is damaged to an extent that it cannot be repaired and remains checked out to the responsible patron, the item should be marked damaged and the patron billed for the full replacement price. (OWWLAC 04/2014)
@@ -98,7 +94,7 @@ If a renewal is allowed, Evergreen should attempt an autorenewal. (EAC 10/2022; 
 
 ### Renewals possible for accounts with circulation blocks
 
-There are no renewal blocks based on circulation blocks - fines $5.00 and more, or 5 or more overdue items. Overdue items can be renewed to finalize bills and stop additional bills from accruing. (OWWLAC, 5/2016).
+There are no renewal blocks based on circulation blocks. Overdue items can be renewed to finalize bills and stop additional bills from accruing. (OWWLAC, 5/2016).
 
 It is recommended practice that library staff renew any overdue items to finalize bills before accepting payment for overdue materials.
 
