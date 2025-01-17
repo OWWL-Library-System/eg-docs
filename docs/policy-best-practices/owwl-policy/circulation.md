@@ -69,7 +69,7 @@ To promote a consistent experience for patrons, items will circulate with due da
 
 ### Editing due dates when another library's item checks out with a "wrong" due date
 
-In some instances, misconfigured or conflicting settings will cause the item to be circulated with a loan period that is different than the checkout library's policy for the given type of material. In this case, the checkout library may edit the due date so that it follows their normal loan period. (OWWLAC 10/2013)
+In some instances, misconfigured or conflicting settings will cause the item to be circulated with a loan period that is different than the checkout library's policy for the given type of material. In this case, the checkout library may edit the due date so that it follows their normal loan period. Please contact OWWL to update your circulation policies so you do not continue to need to edit items' due dates. (OWWLAC 10/2013)
 
 ## Lost and damaged items
 ### Mark lost manually
