@@ -27,7 +27,7 @@ Patrons may place up to 20 active holds. Patrons may place up to 30 additional s
 
 ### Age Based Hold Protection
 
-Age-based hold protection limits holds to those requests being picked up at the owning library, for a period of two months based on the copy create date. Use of age-based hold protection is optional, can be applied to all types of new materials, and can be removed from a copy at any time, as determined by the owning library. (OWWLAC 02/2013, 04/2014)
+Age-based hold protection limits holds to those requests being picked up at the owning library, for a period of up to two months based on the copy create date. Use of age-based hold protection is optional, can be applied to all types of new materials, and can be removed from a copy at any time, as determined by the owning library. (OWWLAC 02/2013, 04/2014)
 
 ## Loan periods
 ### Editing due dates when a patron needs extra time
