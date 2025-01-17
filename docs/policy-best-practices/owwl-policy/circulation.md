@@ -94,7 +94,7 @@ If a renewal is allowed, Evergreen should attempt an autorenewal. (EAC 10/2022; 
 
 ### Renewals possible for accounts with circulation blocks
 
-There are no renewal blocks based on circulation blocks - fines $5.00 and more, or 5 or more overdue items. Overdue items can be renewed to finalize bills and stop additional bills from accruing. (OWWLAC, 5/2016).
+There are no renewal blocks based on circulation blocks. Overdue items can be renewed to finalize bills and stop additional bills from accruing. (OWWLAC, 5/2016).
 
 It is recommended practice that library staff renew any overdue items to finalize bills before accepting payment for overdue materials.
 
