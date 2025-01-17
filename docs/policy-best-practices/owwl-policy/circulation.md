@@ -80,10 +80,6 @@ Any library can mark an item lost, even items not owned by that library. Marking
 
 If a damaged item is not owned by your library, use a Recall Hold to send the item back to the owning library for evaluation and to be marked damaged as necessary. (OWWLAC 04/2014; EAC 04/2022; PLSDAC 05/2022)
 
-### Mark item lost by patron, item not owned by your library
-
-Any library may manually mark lost any other library's materials. When in doubt, contact the owning library before taking action. (OWWLAC 04/2014)
-
 ### Overdue until lost
 
 All items that are overdue more than 8 weeks will be marked as lost automatically by the Evergreen system. This will create a Lost Materials bill on the patron's account, which will typically block the patron from further circulation. (OWWLAC 04/2014)
