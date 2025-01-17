@@ -15,7 +15,7 @@ Patrons are blocked from checking out new materials if they have 5 or more overd
 ## Holds
 ### Holds and accounts with circulation blocks
 
-If a patron's account has circulation blocks - fines of $5.00 or more or more than 5 overdue items - they may still place holds, and the holds will be captured and sent to the patron's pickup library as normal. However, the patron must resolve the circulation blocks before they will be able to check out their hold items. (OWWLAC 08/2018; EAC 04/2022; PLSDAC 05/2022)
+If a patron's account has circulation blocks they may still place holds, and the holds will be captured and sent to the patron's pickup library as normal. However, the patron must resolve the circulation blocks before they will be able to check out their hold items. (OWWLAC 08/2018; EAC 04/2022; PLSDAC 05/2022)
 
 ### Holds not picked up
 
