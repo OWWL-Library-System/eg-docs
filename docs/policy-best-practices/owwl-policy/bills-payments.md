@@ -22,10 +22,6 @@ Bills for lost and damaged materials may be paid at any library but the payment 
 
 (11/2013; EAC 02/2022; PLSDAC 03/2022; PLSDAC 01/2023; EAC 03/2023; OWWLDAC 03/2023; EAC 06/2023; OWWLDAC 09/2023)
 
-### Payments accepted for lost/damaged items owned by another library
-
-Any library may accept payment for any other libraries' lost or damaged materials, but the payment must be forwarded to the owning library. (OWWLAC 04/2014; EAC 04/2022; PLSDAC 05/2022)
-
 ### Lost Materials Processing Fee bills
 
 If a library charges processing fees in addition to lost materials bills, then the library should roll the fee into the item price or use the system-generated Lost Materials Processing Fee bill. No libraries should create manual bills, after the fact. Contact PLS to configure the system-generated processing fee bill. (01/2014)
