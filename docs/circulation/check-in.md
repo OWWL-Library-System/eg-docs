@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Check In
+# Check in
 
 ## Overview
 
