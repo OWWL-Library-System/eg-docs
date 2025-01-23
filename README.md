@@ -7,3 +7,7 @@ npm init docusaurus
 //language: Typescript
 npm install @orama/plugin-docusaurus-v3
 ```
+
+Set env variables:
+- ORAMA_CLOUD_INDEX_ID
+- ORAMA_CLOUD_API_KEY
