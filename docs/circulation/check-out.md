@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Basic check out
 
-1. From the home screen, click the **Check Out Items** link, select **Circulation &rarr; Check Out**, or navigate to the **Check Out** tab if already in a patron’s record.
+1. Select **Check Out Items** from the home screen, select **Circulation &rarr; Check Out**, or navigate to the **Check Out** tab if already in a patron’s record.
 2. Scan the patron's barcode.
    - If the patron does not have their card, use the **Patron Search** link to retrieve their account.
 3. Scan the item barcode.

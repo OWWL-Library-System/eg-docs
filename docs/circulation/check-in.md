@@ -8,74 +8,65 @@ sidebar_position: 2
 
 Scan an item in **Check In** to clear a circulation from a patron's account or to process an item status update.
 
-## Basic Check In
+## Basic check in
 
-![Check in page]
-
-1. To check in an item, click **Check In Items** on the home screen, or select **Check In** from the **Circulation** menu in the toolbar.  
-2. Scan the item barcode (or enter the barcode manually and click Submit).  
+1. Select **Check In Items** on the home screen or select **Check In** from the **Circulation** menu in the toolbar.
+2. Scan the item barcode (or enter the barcode manually and press Submit).
 3. The item will appear in the **Items Checked In** table.
 
-> **Note:**  
-> - If there is an overdue fine associated with the check-in, an alert will appear at the top of the screen with a fine tally for the current check-in session. To handle fine payment immediately, click the alert to jump to the patron’s bill record.  
-> - If the item being checked in can fill a hold, a pop-up box will appear with the patron's contact information (for a hold at your library) or with routing information (if being put in transit for a hold at another library). For more on processing holds, see below.  
-> - If the item being checked in is owned by another library, a pop-up box will appear with routing information. For more on processing items being sent to another library, see below.
+## Backdated check in
 
-## Backdated Check In
+To backdate a check-in, such as for book drop materials or following an unanticipated closure, change the **Effective Date** before scanning items.
 
-![Check in page with backdating enabled]
-
-To backdate a check-in, such as for book drop materials or following an emergency closure, change the **Effective Date** before scanning items.
-
-1. Manually type the effective date or use the calendar gadget.  
-2. Once the date is changed, a _Backdated Check In [m/dd/yyyy]_ statement will be added at the top of the screen. A _Backdating Enabled_ button will also appear at the top of the screen.  
-3. To clear the backdate, refresh the **Check In** screen or close the tab.
-
-> **New in 3.6:**  
-> To keep backdating enabled for your entire session, check the box next to the new **Use effective date until logout** option that appears under the **Effective Date** box. You can navigate away from the Check In screen and backdating will still be enabled when you return.
-
-### Backdating Post-Check-in
+1. Manually type the effective date or use the calendar tool.
+2. Once the date is changed, a _Backdated Check In [mm/dd/yyyy]_ statement will be added at the top of the screen. A _Backdating Enabled_ button will also appear at the top of the screen.
+3. If you would like to continue to use the selected date for the rest of your session, check the **Use effective date until logout** box. To clear the backdate, refresh the page, close the tab, or select the calendar tool and press the **Clear** button.
 
 If items have already been scanned using the current date but should have been backdated, the effective date can be retroactively changed.
 
-1. Select the item(s) from the **Items Checked In** table.  
-2. Select **Backdate Post-Checkin** from the **Actions** menu.  
-3. In the **Backdate Already Checked-In** circulations dialog, set the effective date. Manually type the correct date or use the calendar gadget.  
-4. Click **Submit**.  
+1. Select the item(s) from the **Items Checked In** table.
+2. Select **Backdate Post-Checkin** from the **Actions** menu.
+3. In the **Backdate Already Checked-In** circulations dialog, set the effective date. Manually type the correct date or use the calendar tool.
+4. Click **Submit**.
 
 After submitting the backdate, the screen will return to the original check-in list, and will not reflect the back date. To verify the item has been backdated, click the item barcode to open the **Item Status Detailed View**. The Quick summary display shows both the Check-in Time (the backdate) and the Check-in Scan Time (the actual date the item was handled).
 
-## Special Check-In Circumstances
+## Special circumstances
 
-### Item Is Captured for a Hold
+### Item has overdue fines
 
-![Hold Slip Pop-up]
+If there is an overdue fine associated with the check in, an alert will appear at the top of the screen with a fine tally for the current session. To handle fine payment immediately, click the alert to jump to the patron’s bill record.
 
-When an item will fill a hold for pickup at your library, a Hold Slip pop-up opens. The alert includes item, hold, and patron information. Click **Print** to trigger the print version of the Hold Slip.
+### Item captured for hold or transit
 
-![Transit Slip Pop-up]
+::::danger[Don't ignore the pop-ups]
 
-When an item will fill a hold for pickup at another library, a Transit Slip pop-up opens. The alert includes the destination library, item, and hold patron information. Click **Print** to trigger the print version of the Hold Transit Slip.
+Several events, such as an item being captured for a hold or being put in transit, result in pop-ups on the screen. Be sure to address the hold or transit pop-up. Either print or close the pop-up before scanning a new item. If the pop-up is not closed before a new item is scanned, the auto-enter function of the scanner will trigger the slip to print instead of entering the barcode scanned.
 
-> **Caution:**  
-> Be sure to address the hold or transit slip—either print or close the pop-up—before scanning a new item. If the pop-up is not closed before a new item is scanned, the auto-enter function of the scanner will trigger the slip to print instead of entering the barcode scanned.  
->  
-> If your library always prints hold and transit slips, you can use the [Auto-Print Hold and Transit Slip] Check-in Modifier.
+:::tip
 
-> **Note:**  
-> If an item is not in a condition to be put in transit (e.g., it's returned damaged), you may want to cancel the transit. To do this, select the item's row in the **Items Checked In** table, and select **Cancel Transit** from the **Actions** menu. The item will then have a status of _Canceled Transit_ rather than _In Transit_.
+If your library always prints hold and transit slips, you can use the **Auto-Print Hold and Transit Slip** Check-in Modifier.
 
-### Item is Put in Transit
+:::
 
-When an item is routed to its owning library, a Transit Slip pop-up opens. The alert includes the destination library and item information. Click **Print** to trigger the print version of the Transit Slip.
+::::
 
-> **Caution:**  
-> Address the transit slip—either print or close the pop-up—before scanning a new item to avoid misprinting or incorrect barcode entry.  
->  
-> Use the [Auto-Print Hold and Transit Slip] Check-in Modifier to automate this process.
+:::tip
 
-> **Note:**  
-> To cancel a transit for an item that is not in condition to be sent, select the item's row in the **Items Checked In** table, and select **Cancel Transit** from the **Actions** menu. The item will then have a status of _Canceled Transit_.
+If an item is not in a condition to be put in transit (e.g., it's returned damaged), you may want to cancel the transit. To do this, select the item's row in the **Items Checked In** table and select **Cancel Transit** from the **Actions** menu. The item will then have a status of _Canceled Transit_ rather than _In Transit_.
+
+:::
+
+#### Item is captured for a local hold
+
+When an item will fill a hold for pickup at your library, a Hold Slip pop-up opens. Press **Print** to print the Hold Shelf Slip.
+
+#### Item is captured for a hold at another library
+When an item will fill a hold for pickup at another library, a Transit Slip pop-up opens. Press **Print** to print the Hold Transit Slip.
+
+#### Item is put in transit
+
+When an item is routed to its owning library, a Transit Slip pop-up opens. Click **Print** to trigger the print version of the Transit Slip.
 
 ## Check-In Modifiers
 
@@ -140,7 +131,7 @@ Records the workstation and date/time in the item's **Inventory Workstation** an
 
 ## Print Check-In Receipt
 
-![Example check-in receipt] 
+![Example check-in receipt]
 
 ![Sample receipt]
 
@@ -161,3 +152,5 @@ Fully paid Lost items cannot be checked in by library staff. These items must be
 ### Copy Status Missing
 
 ![Copy Status Missing]
+
+You may also check in items in other contexts, such as when viewing a list of a patron's items checked out, by selecting **Actions &rarr; Check In**.
