@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'OWWL Library System Technical Documentation',
   tagline: '',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/cropped-OWWL-favicon-1-32x32.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
