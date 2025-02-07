@@ -96,7 +96,7 @@ This modifier is not recommended.  Using this modifier causes all items checked 
 
 Overdue fines are voided or not created for the circulation transaction.
 
-:::owwl
+:::note[OWWL Policy]
 
 Per OWWL Policy, this checkin modifier should only be used in extenuating circumstances.
 
