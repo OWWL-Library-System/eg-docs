@@ -28,3 +28,13 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.custom-note-admonition {
+  border-left: 4px solid #003865;
+  background-color: rgba(0, 56, 150, 0.1);
+}
+
+[data-theme='dark'] .custom-note-admonition {
+  border-left: 4px solid #003865;
+  background-color: rgba(0, 112, 224, 0.2);
+}
