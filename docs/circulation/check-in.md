@@ -39,17 +39,17 @@ If there is an overdue fine associated with the check in, an alert will appear a
 
 ### Item captured for hold or transit
 
-::::danger[Don't ignore the pop-ups]
+:::danger[Don't ignore the pop-ups]
 
 Several events, such as an item being captured for a hold or being put in transit, result in pop-ups on the screen. Be sure to address the hold or transit pop-up. Either print or close the pop-up before scanning a new item. If the pop-up is not closed before a new item is scanned, the auto-enter function of the scanner will trigger the slip to print instead of entering the barcode scanned.
+
+:::
 
 :::tip
 
 If your library always prints hold and transit slips, you can use the **Auto-Print Hold and Transit Slip** Check-in Modifier.
 
 :::
-
-::::
 
 :::tip
 
@@ -68,29 +68,40 @@ When an item will fill a hold for pickup at another library, a Transit Slip pop-
 
 When an item is routed to its owning library, a Transit Slip pop-up opens. Click **Print** to trigger the print version of the Transit Slip.
 
-## Check-In Modifiers
+## Checkin modifiers
 
-![Check-in Modifiers]
-
-Check-in Modifiers automate certain check-in or item processing behaviors. Selected modifiers are displayed in a pink bar below the Check-In Items page label. Modifiers remain active until unchecked, even if you navigate away from the page or log out.
+Checkin modifiers automate certain check in or item processing behaviors. Selected modifiers are displayed in a pink bar below the Checkin Items page label. Modifiers remain active until unchecked, even if you navigate away from the page or log out.
 
 ### Ignore Pre-cataloged Items
 
 No prompt for pre-cataloged items. Item status changes to Cataloging silently.
 
-> **Caution:**  
-> This modifier is not recommended. Processing pre-cataloged items immediately is preferred.
+:::caution
+
+This modifier is not recommended. Processing pre-cataloged items immediately is preferred.
+
+:::
 
 ### Suppress Holds and Transits
 
 Items are not used to fill holds or sent in transit and instead are immediately assigned a Reshelving status.
 
-> **Caution:**  
-> Using this modifier causes all items checked in to fail to be sent in transit, including other libraries' items.
+:::caution
+
+This modifier is not recommended.  Using this modifier causes all items checked in to fail to be sent in transit, including other libraries' items.
+
+:::
 
 ### Amnesty Mode
 
-Overdue fines are voided or not created for the circulation transaction. Per [OWWL Policy], this modifier should only be used in extenuating circumstances.
+Overdue fines are voided or not created for the circulation transaction.
+
+:::owwl
+
+Per OWWL Policy, this checkin modifier should only be used in extenuating circumstances.
+
+:::
+
 
 ### Auto-Print Hold and Transit Slips
 
