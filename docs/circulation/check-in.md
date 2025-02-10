@@ -75,7 +75,7 @@ Checkin modifiers automate certain check in or item processing behaviors. Select
 
 ### Ignore Pre-cataloged Items
 
-No prompt for pre-cataloged items. Item status changes to Cataloging silently.
+No prompt for pre-cataloged items. Item status changes to _Cataloging_ silently.
 
 :::caution
 
@@ -85,7 +85,7 @@ This modifier is not recommended. Processing pre-cataloged items immediately is 
 
 ### Suppress Holds and Transits
 
-Items are not used to fill holds or sent in transit and instead are immediately assigned a Reshelving status.
+Items are not used to fill holds or sent in transit and instead are immediately assigned a _Reshelving_ status.
 
 :::caution
 
@@ -109,7 +109,7 @@ Hold and Transit Slips automatically print without pop-ups. Items are made avail
 
 ### Clear Holds Shelf
 
-Clears hold-shelf-expired items during check-in. This cancels the hold, removes the item from the Holds Shelf list, and assigns a new status (e.g., _Reshelving_ or _In Transit_).
+Clears hold-shelf-expired items during check-in. This cancels the hold, removes the item from the _Holds Shelf_ list, and assigns a new status (e.g., _Reshelving_ or _In Transit_).
 
 ### Retarget Local Holds
 
@@ -117,21 +117,21 @@ Attempts to retarget local holds for newly-catalogued items owned by the library
 
 ### Retarget All Statuses
 
-Similar to Retarget Local Holds, but attempts to retarget holds for all item statuses. Must be used with Retarget Local Holds.
+Similar to _Retarget Local Holds_, but attempts to retarget holds for all item statuses. Must be used with _Retarget Local Holds_.
 
 :::tip
 
-Use Retarget Local Holds and Retarget All Statuses, especially for holdings staff.
+Use _Retarget Local Holds_ and _Retarget All Statuses_, especially for holdings staff.
 
 :::
 
 ### Capture Local Holds as Transit
 
-Local holds are given an In Transit status instead of being placed on the holds shelf.
+Local holds are given an _In Transit_ status instead of being placed on the holds shelf.
 
 ### Manual Floating Active
 
-Enables manual floating for items in configured Floating Groups. Items float based on the "Manual" flag setting.
+Enables manual floating for items in configured _Floating Groups_. Items float based on the "Manual" flag setting.
 
 :::caution
 
@@ -141,7 +141,7 @@ Floating Groups are not widely used. Avoid using this modifier unless needed.
 
 ### Update Inventory
 
-Records the workstation and date/time in the item's **Inventory Workstation** and **Inventory Date** fields during scanning.
+Records the workstation and date/time in the item's _Inventory Workstation_ and _Inventory Date_ fields during scanning.
 
 :::caution
 
