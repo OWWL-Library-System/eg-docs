@@ -4,6 +4,35 @@ sidebar_position: 3
 
 # Managing circulations
 
+The **Items Out** list shows all current checkouts, lost items, and claims returned items on a patron’s account. Use this list to manage, update, and investigate patron loans.
+
+The **Items Out** list includes three types of circulations on separate tabs:
+
+- **Items Out**: Includes all currently checked out items
+- **Other/Special Circulations**: Includes claims returned and lost items.
+- **Non-Cataloged Circulations**: Includes circulations of non-cataloged items.
+
+## Edit due dates
+
+If an item checks out with the wrong due date, staff can change it:
+
+1. Select the item.
+2. Select **Actions &rarr; Edit Due Date**.
+3. Set the correct date using the calendar widget.
+4. Press **OK**.
+
+:::note[OWWL Policy]
+
+In some instances, mis-configured or conflicting settings will cause the item to be circulated with a loan period that is different than the checkout library's policy for the given type of material. In this case, the checkout library may edit the due date so that it follows their normal loan period.
+
+:::
+
+:::note[OWWL Policy]
+
+In order to provide good customer service, library staff may edit the due date to provide extra time. The due date should not be extended beyond six weeks from the original due date without permission from the owning library. Do not use editing a due date to circumvent hold blocks, extend due dates on titles with holds, or prevent return of materials to the owning library.
+
+:::
+
 ## Renewals
 
 Most loans can be renewed, allowing additional loan periods. The number of renewals depends on the circulation library's circulation policies. Most libraries allow print books and audiobooks to be renewed twice. Videos usually allow one renewal. Special materials, such as new items, may not be renewable.
@@ -92,11 +121,11 @@ Patrons can renew their own loans by logging into their online accounts.
 
 In addition to the renewal-specific errors mentioned below, some [checkout errors](./check-out.md#check-out-errors) could also be encountered when attemping a renewal.
 
-#### ACTION_CIRCULATION_NOT_FOUND
+###### ACTION_CIRCULATION_NOT_FOUND
 
 This is an error message that indicates that the attempted action did not occur because the system cannot process the requested transaction. This error displays for both _Lost_ and _Claims Returned_ items.
 
-#### COPY_NEEDED_FOR_HOLD
+###### COPY_NEEDED_FOR_HOLD
 
 If another patron has placed a hold on the same title, the renewal fails.
 
@@ -106,7 +135,7 @@ Per OWWL Policy, items with holds - title, volume, or copy level - cannot be ren
 
 :::
 
-#### MAX_RENEWALS_REACHED
+###### MAX_RENEWALS_REACHED
 
 This alert will display if an item has already been renewed the number of renewals allowed.
 
@@ -175,65 +204,110 @@ Marking an item as damaged changes the item's status to _Damaged_ and optionally
 You can mark an item damaged from a number of different screens, including the _Item Status_ screen, the _Holdings View_ tab on a bibliographic record, and the _Checkin Items_ screen.
 
 1. Scan an item in _Item Status_ or select the _Detail View_ and select **Actions &rarr; Mark/Item as Damaged**; from _Holdings View_, select the item then select **Actions &rarr; Mark/Mark Item Damaged**; or from _Checkin Items_, select the item and select **Actions &rarr; Mark Items Damaged**.
+2. Review the information and press **Submit** to confirm the action.
+3. In the _Mark Item(s) Damaged_ dialog, decide whether you will charge the patron for damage.
+   - If you will charge for damage:
+      1. Select **Charge Fees** if it is not selected already.
+      2. Keep the default replacement fee or enter a new amount.
+      3. Select **Manual Damaged Item** as the bill type.
+      4. Add a note (optional).
+   - If you will not charge for damage:
+      1. Press **No Charge** if it is now selected already.
+4. Press **Submit**.
 
+:::note[OWWL Policy]
 
+Per OWWL Policy, if a damaged item is not owned by your library, use a Recall Hold to send the item back to the owning library for evaluation and to be marked damaged as necessary. Please follow the Damaged Item Flowchart to determine whether to mark an item damaged.
 
+:::
 
+#### Damaged item flowchart
 
+```mermaid
+flowchart TB;
 
-
-
-
-
-
-2. Confirm the action.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Not Your Item?
-
-Refer to the [Damaged Item Flowchart] for guidance.
-
-## Charging a Patron for Damage
-
-1. In the **Mark Item(s) Damaged** dialog:
-   - Keep the default replacement fee or enter a new amount.
-   - Select **Manual Damaged Item** as the bill type.
-   - Add a note (optional).
-2. Click **Submit**.
-
-
-## Not Charging a Fee
-
-1. In the **Mark Item(s) Damaged** dialog:
-   - Click **No Charge**.
-2. Click **Submit**.
-
-
-
-
-
-
+A([Damaged item returned.]) --> B{Item owned by you?}
+B -->|Yes| C([Follow local processes.])
+B -->|No| D[Let patron know that determination to charge for damage needs to be made by owning library.]
+D --> E{Do you know who manages holdings at the owning library?}
+E -->|Yes| F[Place Recall Hold on item for holdings contact at owning library.]
+E -->|No| G{Can you get in touch with the owning library?}
+G -->|Yes| H[Determine who is the holdings contact at the owning library.]
+G -->|No| I[Place Recall Hold on item for director of owning library.]
+H --> F
+F --> J[Check in item. Evergreen will put item in transit to owning library.]
+I --> J
+J --> K([Email holdings contact or director at owning library. Let them know to expect item.])
+```
 ## Claims returned
 
+If a patron claims that they returned the item and neither they nor the library can find the item, you can mark the item as claims returned.
+
+Marking an item as claims returned:
+- Moves the item to **Other/Special Circulations**
+- Changes the item status to _Claimed Returned_
+- Increases the **Claims-returned Count** on the patron’s record
+
+### Mark item claims returned
+
+To mark an item as claims returned:
+
+1. Select the item from the patron's **Items Out**.
+2. Select **Actions &rarr; Mark Claims Returned**.
+3. Select the date on which the patron claims they returned the item. If applicable, overdue fines will be adjusted as if the item had been returned on the date selected.
+4. Press **Submit**.
+
 ## Claims never checked out
+
+If a patron claims that they returned the item and neither they nor the library can find the item, you can mark the item as claims never checked out.
+
+Marking an item as claims never checked out:
+- Closes the circulation transaction
+- Removes the item from the patron’s record
+- Changes the item status to _Missing_
+- Increases the **Claims Never Checked Out Count** on the patron's record
+
+### Mark item claims never checked out
+
+To mark an item as claims never checked out:
+
+1. Select the item from the patron's **Items Out**.
+2. Select **Actions &rarr; Mark Claims Never Checked Out**.
+3. Press **OK/Continue**.
+
+## Other functions
+
+### Check in
+
+In most cases, you will check in items using the [Checkin Items screen](./check-in.md). Use **Check In** from the **Items Out** list to remove an item from a patron’s record if it cannot be scanned.
+
+1. Select the item.
+2. Select **Actions &rarr; Check In**.
+3. Press **OK/Continue**.
+
+### Add billing
+
+Use **Add Billing** to manually add a bill to a circulation transaction. This links the bill to the item’s title, circulation date, and other details.
+
+A similar **Add Billing** function is available in the **Bills** section for adding manual charges to existing bills.
+
+1. Select the item.
+2. Select **Actions &rarr; Add Billing**.
+3. Select the **Billing Type**.
+4. Enter the **Amount** to bill.
+5. Enter a **Note** if applicable.
+6. Press **Submit Bill**.
+
+### Print item receipt
+
+To print due date slips for items already checked out:
+
+1. Select the items.
+2. Select **Actions &rarr; Print Item Receipt**.
+
+### Circulation events
+
+You can view any events associated with a circulation, such as courtesy notices, by viewing the circulation's **Triggered Event Log**.
+
+1. Select the item.
+2. Select **Actions &rarr; Show Triggered Events**.
