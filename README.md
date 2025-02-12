@@ -6,6 +6,7 @@ npm init docusaurus
 //template: classic
 //language: Typescript
 npm install @orama/plugin-docusaurus-v3
+npm install --save @docusaurus/theme-mermaid
 ```
 
 Set env variables:
