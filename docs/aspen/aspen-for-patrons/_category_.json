@@ -1,0 +1,9 @@
+{
+    "label": "Aspen for patrons",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Aspen patron documentation for staff. All patron-facing pages are available via search.owwl.org/help."
+    }
+  }
+  
