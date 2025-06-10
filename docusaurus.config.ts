@@ -30,16 +30,6 @@ const config: Config = {
   themes: ['@docusaurus/theme-mermaid'],
 
   plugins: [
-    [
-      "@orama/plugin-docusaurus-v3",
-      {
-        cloud: {
-          indexId: process.env.ORAMA_CLOUD_INDEX_ID,
-          oramaCloudAPIKey: process.env.ORAMA_CLOUD_API_KEY, // Env variable suggested
-          deploy: false, // Enables deploy while building/starting
-        },
-      },
-    ],
   ],
 
   // Even if you don't use internationalization, you can use this field to set
