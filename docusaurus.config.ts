@@ -27,6 +27,8 @@ const config: Config = {
     mermaid: true,
   },
 
+  plugins: [require.resolve('docusaurus-lunr-search')],
+
   themes: ['@docusaurus/theme-mermaid'],
 
   // Even if you don't use internationalization, you can use this field to set
